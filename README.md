@@ -1,2 +1,3 @@
-# Computational Geometry Project
-Project created as part of my Computational Geometry Class.
+# School Projects
+
+Select projects completed as part of my undergrad coursework.
