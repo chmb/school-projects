@@ -11,9 +11,11 @@ Matplotlib was used to plot the points. Its plt.pause function was used between 
 ### Algorithms used:
 Gift Wrapping Algorithm: This algorithm is known to be computable in O(n) time best case and O(n^2) time in the worst case. I model this algorithm by starting at the left most point and working through the rest of the points in a counter clockwise fashion.
 
-![gigiftwrap](https://user-images.githubusercontent.com/12681675/28742511-d2435de4-73ff-11e7-9cbe-d41de32aebb7.gif)
+
 
 Monotone Chain Algorithm: This algorithm is known to be computable in O(nlogh) time best case and O(nlogn) time in the worst case. I model this algorithm by starting with an extreme left point, computing the upper and lower hulls respectively, and combining the output to form the completed hull.
+
+![gigiftwrap](https://user-images.githubusercontent.com/12681675/28742511-d2435de4-73ff-11e7-9cbe-d41de32aebb7.gif)
 
 school-projects/computational-geometry/giMontoneChain.gif
 
