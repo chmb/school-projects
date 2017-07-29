@@ -1,4 +1,5 @@
 # Computational Geometry Project
+### Spring 2017
 
 A program created using Python to give a visual simulation of the computation of the convex hull of a set of points using the gift wrapping and monotone chain algorithms.
 
