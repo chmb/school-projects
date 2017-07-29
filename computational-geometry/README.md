@@ -1,6 +1,6 @@
 # Computational Geometry Project
 
-A program created using Python to compute the convex hull of a set of points using the gift wrapping and monotone chain algorithms.
+A program created using Python to give a visual simulation of the computation of the convex hull of a set of points using the gift wrapping and monotone chain algorithms.
 
 Tkinter was used to create the graphical user interface using which a user could specify how many random points existed in the set and which algorithm they wanted to simulate by clicking on one of the respective buttons.
 
@@ -11,6 +11,6 @@ Matplotlib was used to plot the points. Its plt.pause function was used between 
 ### Algorithms used:
 Gift Wrapping Algorithm: This algorithm is known to be computable in O(n) time best case and O(n^2) time in the worst case. I model this algorithm by starting at the left most point and working through the rest of the points in a counter clockwise fashion.
 
-Monotone Chain: This algorithm is known to be computable in O(nlogh) time best case and O(nlogn) time in the worst case. I model this algorithm by starting with an extreme left point, computing the upper and lower hulls respectively, and combining the output to form the completed hull.
+Monotone Chain Algorithm: This algorithm is known to be computable in O(nlogh) time best case and O(nlogn) time in the worst case. I model this algorithm by starting with an extreme left point, computing the upper and lower hulls respectively, and combining the output to form the completed hull.
 
 
