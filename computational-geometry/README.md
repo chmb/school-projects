@@ -15,6 +15,8 @@ Gift Wrapping Algorithm: This algorithm is known to be computable in O(n) time b
 
 Monotone Chain Algorithm: This algorithm is known to be computable in O(nlogh) time best case and O(nlogn) time in the worst case. I model this algorithm by starting with an extreme left point, computing the upper and lower hulls respectively, and combining the output to form the completed hull.
 
+![gifmonotonechain](https://user-images.githubusercontent.com/12681675/28742534-4798a824-7400-11e7-93ec-fce07d54b9c9.gif)
+
 
 
 
