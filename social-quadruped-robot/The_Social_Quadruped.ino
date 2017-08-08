@@ -124,11 +124,10 @@ void loop()
           }
        }
    }
-          if (autoMove)
-          {
-              autonomy ();
-              Serial.println(distance);
-          }
-          
+   if (autoMove)
+   {
+       autonomy ();
+       Serial.println(distance);
+   }          
 }
   
