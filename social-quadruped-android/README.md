@@ -5,5 +5,7 @@ An Android application created using Android Studio and Java that enabled the wi
 
 ![splashscreen](https://user-images.githubusercontent.com/12681675/29089136-52b777d4-7c49-11e7-8b01-90a187ad47e7.png)
 
+![manualactivity](https://user-images.githubusercontent.com/12681675/29089214-8e0b34e2-7c49-11e7-80fb-2eeb97f35650.png)
+
 
 
