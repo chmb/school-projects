@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:screenOrientation="portrait"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activitybackground">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_forward"
+        android:onClick="onClick"
+        android:background="@drawable/custom_buttonup"
+        android:layout_above="@+id/button_left"
+        android:layout_toRightOf="@+id/button_left" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_backward"
+        android:onClick="onClick"
+        android:background="@drawable/custom_buttondown"
+        android:layout_above="@+id/button_wave"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="66dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_stand"
+        android:onClick="onClick"
+        android:background="@drawable/custom_buttonstand"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/button_left" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_wave"
+        android:onClick="onClick"
+        android:background="@drawable/custom_buttonwave"
+        android:layout_alignTop="@+id/button_stand"
+        android:layout_toRightOf="@+id/button_left" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_sleep"
+        android:onClick="onClick"
+        android:background="@drawable/custom_buttonsleep"
+        android:layout_alignTop="@+id/button_wave"
+        android:layout_toRightOf="@+id/button_wave" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_left"
+        android:background="@drawable/custom_buttonleft"
+        android:layout_alignTop="@+id/button_roam"
+        android:layout_toLeftOf="@+id/button_roam" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_right"
+        android:background="@drawable/custom_button"
+        android:layout_alignRight="@+id/button_sleep"
+        android:layout_alignBottom="@+id/button_roam"
+        android:layout_toRightOf="@+id/button_forward"
+        android:layout_alignTop="@+id/button_roam" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_roam"
+        android:onClick="onClick"
+        android:background="@drawable/custom_buttonroam"
+        android:layout_above="@+id/button_backward"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
