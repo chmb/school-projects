@@ -1,3 +1,3 @@
 # School Projects
 
-Projects completed as part of my undergrad coursework.
+Some projects completed as part of my undergrad coursework.
