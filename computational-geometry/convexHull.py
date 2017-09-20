@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from tkinter import *
+import tkinter as tk
 
 class FinalProject:
     # GUI that allows user to select number of points to simulate and preferred algorithm
@@ -9,29 +9,29 @@ class FinalProject:
         master.maxsize(width=600, height=600)
         master.wm_title("Computational Geometry Final Project")
 
-        self.PointsLabel = Label(master, text="Number of points:")
+        self.PointsLabel = tk.Label(master, text="Number of points:")
         self.PointsLabel.config(font=("Open Sans Light", 15))
         self.PointsLabel.pack(side="top", fill="none", expand=False)
         self.PointsLabel.pack(pady=25)
 
-        self.entryFramePoints = Frame(master, width = 300, height = 100)
+        self.entryFramePoints = tk.Frame(master, width = 300, height = 100)
         self.entryFramePoints.pack(side="top", fill="both", expand=False)
 
-        self.pointsNum = Entry(self.entryFramePoints, justify = CENTER)
+        self.pointsNum = tk.Entry(self.entryFramePoints, justify = 'center')
         self.pointsNum.config(font=("Open Sans Light", 12))
         self.pointsNum.pack(pady=25)
 
-        self.generatePoints = Button(master, text="Gift Wrapping Algorithm", command=self.genGift, width=20, default = 'active')
+        self.generatePoints = tk.Button(master, text="Gift Wrapping Algorithm", command=self.genGift, width=20, default = 'active')
         self.generatePoints.pack(side="top", fill="none", expand=False)
         self.generatePoints.config(font=("Open Sans Light", 15))
         self.generatePoints.pack(pady=25)
 
-        self.generateHull = Button(master, text="Monotone Chain", command=self.monChain, width=20, default = 'active')
+        self.generateHull = tk.Button(master, text="Monotone Chain", command=self.monChain, width=20, default = 'active')
         self.generateHull.pack(side="top", fill="none", expand=False)
         self.generateHull.config(font=("Open Sans Light", 15))
         self.generateHull.pack(pady=25)
 
-        self.quitButton = Button(master, text="Quit", command=quit)
+        self.quitButton = tk.Button(master, text="Quit", command=quit)
         self.quitButton.pack(side="top", fill="none", expand=False)
         self.quitButton.config(font=("Open Sans Light", 15))
         self.quitButton.pack(pady=50)
@@ -43,11 +43,11 @@ class FinalProject:
         self.minsize(width=400, height=400)
         self.maxsize(width=400, height=400)
 
-        self.noPoints = Label(self, text="Sorry, the points field cannot be empty. \n Please enter the number of points to be simulated.", font=("Open Sans Light", 12))
+        self.noPoints = tk.Label(self, text="Sorry, the points field cannot be empty. \n Please enter the number of points to be simulated.", font=("Open Sans Light", 12))
         self.noPoints.pack(side="top", fill="none", expand=False)
         self.noPoints.pack(pady=80)
 
-        self.returnButton = Button(self, text="Return", command=self.destroy, width=20)
+        self.returnButton = tk.Button(self, text="Return", command=self.destroy, width=20)
         self.returnButton.pack(side="top", fill="none", expand=False)
         self.returnButton.config(font=("Open Sans Light", 12))
         self.returnButton.pack(pady=45)
@@ -176,6 +176,6 @@ class FinalProject:
         plt.axis('off')
         plt.show()
 
-master = Tk()
+master = tk.Tk()
 simulate = FinalProject(master)
 master.mainloop()
